@@ -8,7 +8,6 @@
 body
 {
 	background: #EEE;
-	overflow-x:hidden;
 }
 
 #container
@@ -17,6 +16,7 @@ body
 	width:100%;
 	max-width:1400px;
 	margin:0px auto;
+	overflow-x:hidden;
 }
 
 #main_img
