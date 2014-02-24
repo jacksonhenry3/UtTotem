@@ -42,7 +42,7 @@ body
 {
 	position: absolute;
 	content:'';
-	width:100%;
+	width:110%;
 	height: 2px;
 	background: #ba89b6;
 	left:-50px;
@@ -145,6 +145,16 @@ h1
   	margin:0px auto;
   	width:300px;
   	margin-bottom:25px;
+  }
+
+  #post
+  {
+  	padding:20px;
+  }
+
+  #posts
+  {
+	margin-top:-50px;
   }
 }
 
