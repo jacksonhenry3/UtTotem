@@ -13,6 +13,19 @@ p
 body
 {
 	background: #EEE;
+	background-image:url('file:///C:/Users/Jackson/Downloads/subtle_white_feathers/subtle_white_feathers/subtle_white_feathers.png');
+}
+
+a
+{
+	text-decoration:none;
+	color:#ba89b6;
+}
+
+a:hover:after
+{
+	content:'';
+
 }
 
 #posts
@@ -73,6 +86,7 @@ body
 	max-width:851px;
 	width:100%;
 	position: relative;
+	box-shadow:0 0 30px rgba(0,0,0,.5);
 }
 
 #main_img:after
@@ -125,9 +139,19 @@ h1
 @media (max-width: 600px) {
   #title h1
   {
-  	top:50px;
-  	font-size: 50px;
+  	top:30px;
+  	font-size: 70px;
   }
+
+  h1
+  {
+  	font-size: 40px;
+  }
+
+  #post h1:after
+{
+	top:45px;
+}
 
   .ribbon {
   	font-size: 20px !important;
@@ -160,18 +184,17 @@ h1
 
 /*--------Style for ribbon----------*/
 	.ribbon {
-	 font-size: 25px;
-	 /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-
-	 max-width: 755px;
-	    position: relative;
-	    top:-50px;
-	 position: relative;
-	 background: #ba89b6;
-	 color: #fff;
-	 text-align: center;
-	 padding: 0em 2em; /* Adjust to suit */
-	 margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+		font-size: 25px;
+		/* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+		max-width: 751px;
+		position: relative;
+		top:-50px;
+		position: relative;
+		background: #ba89b6;
+		color: #fff;
+		text-align: center;
+		padding: 0em 2em; /* Adjust to suit */
+		margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 	}
 
 	.ribbon li
