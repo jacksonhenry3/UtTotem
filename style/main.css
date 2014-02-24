@@ -31,13 +31,13 @@ a:hover:after
 
 #posts
 {
+	width:500px;
+	overflow: hidden;
 	position: relative;
-	/*left:-100%;*/
 	opacity: 0;
-	width: 100%;
 	margin:0px auto;
 	text-align: center;
-	transition:opacity 2s;
+	transition:all 2s;
 }
 
 #post{
@@ -207,6 +207,7 @@ h2
   #posts
   {
 	margin-top:-50px;
+	transition:all 0s;
   }
 }
 
