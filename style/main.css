@@ -1,8 +1,8 @@
 *
 {
-	margin:0px;
-	padding:0px;
-	color:#222;
+	margin: 0px;
+	padding: 0px;
+	color: #222;
 }
 
 p
@@ -11,104 +11,111 @@ p
 	font-size: 1.1em;
 	text-align: left;
 }
+
 body
 {
 	background: #EEE;
-	background-image:url('../images/subtle_white_feathers.png');
+	background-image: url('../images/subtle_white_feathers.png');
 }
 
 a
 {
-	text-decoration:none;
-	color:#ba89b6;
+	text-decoration: none;
+	color: #ba89b6;
 }
 
 a:hover:after
 {
-	content:'';
-
+	content: '';
 }
 
 #posts
 {
-	width:500px;
+	width: 500px;
 	overflow: hidden;
 	position: relative;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
 	opacity: 0;
-	margin:0px auto;
+	margin: 0 auto;
 	text-align: center;
-	transition:all 2s;
+	-moz-transition: opacity 3s, width 1s;
+	-o-transition: opacity 3s, width 1s;
+	-webkit-transition: opacity 3s, width 1s;
+	transition: opacity 3s, width 1s;
 }
 
-#post{
+.post
+{
+	position: relative;
 	display: inline-block;
-	max-width:800px;
+	max-width: 800px;
 	width: 80%;
-	margin-bottom:80px;
+	margin-bottom: 60px;
+	margin-top: 20px;
 	background: #FFF;
 	border-radius: 4px;
-	border:1px solid rgba(0,0,0,.2);
-	border-bottom:3px solid rgba(0,0,0,.4);
-	
-	padding:50px;
-	padding-top:20px;
+	border: 1px solid rgba(0,0,0,.2);
+	border-bottom: 3px solid rgba(0,0,0,.4);
+	padding: 50px;
+	padding-top: 20px;
 	overflow: hidden;
 	box-shadow: 0 0 30px rgba(0,0,0,.3);
-
 }
-#post h1{
+
+.post h1
+{
 	position: relative;
 }
 
-#post h1:after
+.post:after
 {
 	position: absolute;
-	content:'';
-	width:110%;
+	content: '';
+	width: 90%;
 	height: 2px;
 	background: #ba89b6;
-	left:-80px;
-	top:65px;
+	left: 0%;
+	top: 85px;
 }
 
-#post img
+.post img
 {
 	border-radius: 250px;
-	/*border:5px solid #222;*/
 	float: left;
-	margin:40px;
-	box-shadow:0 0 30px rgba(0,0,0,.5);
+	margin: 40px;
+	box-shadow: 0 0 30px rgba(0,0,0,.5);
 }
+
 #container
 {
-	padding-top:50px;
-	width:100%;
-	/*max-width:1200px;*/
-	margin:0px auto;
-	overflow-x:hidden;
+	padding-top: 50px;
+	width: 100%;
+	margin: 0px auto;
+	overflow-x: hidden;
 }
 
 #main_img
 {
 	display: block;
-	margin:0px auto;
-	max-width:851px;
-	width:100%;
+	margin: 0px auto;
+	max-width: 851px;
+	width: 100%;
 	position: relative;
-	box-shadow:0 0 30px rgba(0,0,0,.5);
+	box-shadow: 0 0 30px rgba(0,0,0,.5);
 }
 
 #main_img:after
 {
-	background:red;
-	content:'';
-	top:50px;
-	left:50px;
-	width:1000px;
-	height:1000px;
+	background: red;
+	content: '';
+	top: 50px;
+	left: 50px;
+	width: 1000px;
+	height: 1000px;
 	position: absolute;
 	display: block;
-	z-index:1000;
+	z-index: 1000;
 }
 
 #title
@@ -120,14 +127,13 @@ a:hover:after
 {
 	position: absolute;
 	font-size: 100px;
-	color:white;
-	text-shadow:0 0 10px #222;
+	color: white;
+	text-shadow: 0 0 10px #222;
 	position: relative;
-	top:100px;
+	top: 100px;
 	z-index: 100;
 	text-align: center;
 	font-family: 'Alegreya Sans SC', sans-serif;
-
 }
 
 #main_nav
@@ -135,18 +141,19 @@ a:hover:after
 	background: #27AE60;
 }
 
+@media (min-width: 1360px)
+{
+	#posts
+	{
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
 
-@media (min-width: 1360px) {
-  #posts {
-  -moz-column-count:    2;
-  -webkit-column-count: 2;
-  column-count:         2;
-  }
-
-  #post
-  {
-  	overflow: visible;
-  }
+	.post
+	{
+		overflow: visible;
+	};
 }
 
 h1,h2
@@ -156,126 +163,145 @@ h1,h2
 	font-weight: 200;
 	text-align: center;
 	font-size: 3.3em;
-	padding-bottom:15px;
+	padding-bottom: 15px;
 }
 
 h2
 {
 	font-size: 2em;
-	padding-top:30px;
+	padding-top: 30px;
 }
 
-@media (max-width: 600px) {
-  #title h1
-  {
-  	top:30px;
-  	font-size: 70px;
-  }
-
-  h1
-  {
-  	font-size: 40px;
-  }
-
-  #post h1:after
+@media (max-width: 600px)
 {
-	top:45px;
-}
+	#title h1
+	{
+		top: 30px;
+		font-size: 70px;
+	}
 
-  .ribbon {
-  	font-size: 20px !important;
-  }
+	h1
+	{
+		font-size: 40px;
+	}
 
-  #container
-  {
-  	padding-top:0px;
-  }
+	.post:after
+	{
+		top: 65px;
+	}
 
-  #post img 
-  {
-  	display: block;
-  	float:none;
-  	margin:0px auto;
-  	width:300px;
-  	margin-bottom:25px;
-  }
+	.ribbon
+	{
+		font-size: 20px !important;
+	}
 
-  #post
-  {
-  	padding:20px;
-  }
+	#container
+	{
+		padding-top: 0px;
+	}
 
-  #posts
-  {
-	margin-top:-50px;
-	transition:all 0s;
-  }
+	.post img
+	{
+		display: block;
+		float: none;
+		margin: 0px auto;
+		width: 300px;
+		margin-bottom: 25px;
+	}
+
+	.post
+	{
+		padding: 20px;
+	}
+
+	#posts
+	{
+		margin-top: -50px;
+		-moz-transition: all 0s;
+		-o-transition: all 0s;
+		-webkit-transition: all 0s;
+		transition: all 0s;
+	};
 }
 
 /*--------Style for ribbon----------*/
-	.ribbon {
-		font-size: 25px;
-		/* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-		max-width: 751px;
-		position: relative;
-		top:-50px;
-		position: relative;
-		background: #ba89b6;
-		color: #fff;
-		text-align: center;
-		padding: 0em 2em; /* Adjust to suit */
-		margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
-	}
+.ribbon
+{
+	font-size: 25px;
+	max-width: 751px;
+	position: relative;
+	top: -50px;
+	position: relative;
+	background: #ba89b6;
+	color: #fff;
+	text-align: center;
+	padding: 0em 2em;
+	margin: 2em auto 3em;
+}
 
-	.ribbon li
-	{
-		padding-top:1em;
-		padding-bottom:1em;
-		width:30%;
-		list-style: none;
-		display: inline-block;
-		font-family: 'Gabriela', serif;
-		color:white;
-		transition:all .4s;
-		cursor:pointer;
-	}
+.ribbon li
+{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	width: 30%;
+	list-style: none;
+	display: inline-block;
+	font-family: "Gabriela", serif;
+	color: white;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	transition: all 0.4s;
+	cursor: pointer;
+}
 
-	.ribbon li:hover
-	{
-		background: rgba(0,0,0,.2);
+.ribbon li:hover
+{
+	background: rgba(0,0,0,.2);
+}
 
-	}
-	.ribbon:before, .ribbon:after {
-	 content: "";
-	 position: absolute;
-	 display: block;
-	 bottom: -1em;
-	 border: 1.5em solid #986794;
-	 z-index: -1;
-	}
-	.ribbon:before {
-	 left: -2em;
-	 border-right-width: 1.5em;
-	 border-left-color: transparent;
-	}
-	.ribbon:after {
-	 right: -2em;
-	 border-left-width: 1.5em;
-	 border-right-color: transparent;
-	}
-	.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
-	 content: "";
-	 position: absolute;
-	 display: block;
-	 border-style: solid;
-	 border-color: #804f7c transparent transparent transparent;
-	 bottom: -1em;
-	}
-	.ribbon .ribbon-content:before {
-	 left: 0;
-	 border-width: 1em 0 0 1em;
-	}
-	.ribbon .ribbon-content:after {
-	 right: 0;
-	 border-width: 1em 1em 0 0;
-	}
+.ribbon:before, .ribbon:after
+{
+	content: "";
+	position: absolute;
+	display: block;
+	bottom: -1em;
+	border: 1.5em solid #986794;
+	z-index: -1;
+}
+
+.ribbon:before
+{
+	left: -2em;
+	border-right-width: 1.5em;
+	border-left-color: transparent;
+}
+
+.ribbon:after
+{
+	right: -2em;
+	border-left-width: 1.5em;
+	border-right-color: transparent;
+}
+
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after
+{
+	content: "";
+	position: absolute;
+	display: block;
+	border-style: solid;
+	border-color: #804f7c transparent transparent transparent;
+	bottom: -1em;
+}
+
+.ribbon .ribbon-content:before
+{
+	left: 0;
+	border-width: 1em 0 0 1em;
+}
+
+.ribbon .ribbon-content:after
+{
+	right: 0;
+	border-width: 1em 1em 0 0;
+}
