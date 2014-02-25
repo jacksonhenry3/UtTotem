@@ -59,6 +59,7 @@ a:hover:after
 #post h1{
 	position: relative;
 }
+
 #post h1:after
 {
 	position: absolute;
@@ -66,7 +67,7 @@ a:hover:after
 	width:110%;
 	height: 2px;
 	background: #ba89b6;
-	left:-50px;
+	left:-80px;
 	top:65px;
 }
 
