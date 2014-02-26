@@ -8,7 +8,6 @@
 
 	body
 	{
-		background: #EEE;
 		background-image: url('../images/subtle_white_feathers.png');
 	}
 
@@ -38,7 +37,7 @@
 	a
 	{
 		text-decoration: none;
-		color: #ba89b6;
+		color: #01356F;
 	}
 
 	a:hover:after
@@ -65,19 +64,6 @@
 		box-shadow: 0 0 30px rgba(0,0,0,.5);
 	}
 
-	#main_img:after
-	{
-		background: red;
-		content: '';
-		top: 50px;
-		left: 50px;
-		width: 1000px;
-		height: 1000px;
-		position: absolute;
-		display: block;
-		z-index: 1000;
-	}
-
 	#title
 	{
 		height: 0px;
@@ -88,17 +74,12 @@
 		position: absolute;
 		font-size: 100px;
 		color: white;
-		text-shadow: 0 0 10px #222;
+		text-shadow: 4px 4px 6px #000;
 		position: relative;
 		top: 100px;
 		z-index: 100;
 		text-align: center;
 		font-family: 'Alegreya Sans SC', sans-serif;
-	}
-
-	#main_nav
-	{
-		background: #27AE60;
 	}
 
 /*--------Style for ribbon----------*/
@@ -107,13 +88,13 @@
 		font-size: 25px;
 		max-width: 751px;
 		position: relative;
-		top: -50px;
+		top: -30px;
 		position: relative;
-		background: #ba89b6;
+		background: #01356F;
 		color: #fff;
 		text-align: center;
 		padding: 0em 2em;
-		margin: 2em auto 3em;
+		margin: 2em auto 1.5em;
 	}
 
 	.ribbon li
@@ -143,7 +124,7 @@
 		position: absolute;
 		display: block;
 		bottom: -1em;
-		border: 1.5em solid #986794;
+		border: 1.5em solid #12467F;
 		z-index: -1;
 	}
 
@@ -166,8 +147,8 @@
 		content: "";
 		position: absolute;
 		display: block;
-		border-style: solid;
-		border-color: #804f7c transparent transparent transparent;
+		border-style: solid;/*#008686*/
+		border-color:  rgba(0,0,0,.3) transparent transparent transparent;
 		bottom: -1em;
 	}
 
@@ -204,11 +185,11 @@
 	{
 		position: relative;
 		display: inline-block;
-		max-width: 800px;
+		max-width: 700px;
 		width: 80%;
 		margin-bottom: 60px;
 		margin-top: 20px;
-		background: #FFF;
+		background: #FCFCFC;
 		border-radius: 4px;
 		border: 1px solid rgba(0,0,0,.2);
 		border-bottom: 3px solid rgba(0,0,0,.4);
@@ -229,7 +210,7 @@
 		content: '';
 		width: 90%;
 		height: 2px;
-		background: #ba89b6;
+		background: #01356F;
 		left: 0%;
 		top: 85px;
 	}
