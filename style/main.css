@@ -18,7 +18,7 @@
 		text-align: left;
 	}
 
-	h1,h2
+	h1,h2,h3
 	{
 		font-family: sans-serif;
 		font-family: 'Alegreya Sans SC', sans-serif;
@@ -32,6 +32,10 @@
 	{
 		font-size: 2em;
 		padding-top: 30px;
+	}
+	h3
+	{
+		font-size: 1.5em;
 	}
 
 	a
@@ -206,6 +210,13 @@
 	.post h1
 	{
 		position: relative;
+	}
+
+	.post .date
+	{
+		font-size: .5em;
+		color:#666;
+		font-weight: 400;
 	}
 
 	.post:after
